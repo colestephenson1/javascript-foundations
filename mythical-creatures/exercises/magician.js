@@ -14,10 +14,11 @@ if (this.favoriteAccessory === 'top hat') {
   return 'PULL DOVE FROM SLEEVE'
 }
   } performShowStopper() {
-    if (confidencePercentage === 100) {
+    if (this.confidencePercentage >= 100 && this.assistant === true ) {
       return 'WOW! The magician totally just sawed that person in half!'
     } else {
       return 'Oh no, this trick is not ready!'
+
 }
   }
 }
