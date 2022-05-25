@@ -13,7 +13,13 @@ this.swings = 0
   }
   swingAt(human) {
     this.swings++
+    if (this.swings === 2) {
+      human.knockedOut = true
     }
+    }
+  apologize(human) {
+    human.knockedOut = false
+  }
   };
 
 module.exports = Ogre;
