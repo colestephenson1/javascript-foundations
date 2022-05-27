@@ -11,9 +11,9 @@ this.safe = false;
     return 'Winter is Coming'
   }
 }
-callDirewolf(name, home) {
-var calledWolf = new Direwolf(name, 'Riverlands')
-return calledWolf
-}
+  callDirewolf(name, home) {
+    var calledWolf = new Direwolf(name, 'Riverlands')
+    return calledWolf
+  }
 }
 module.exports = Stark;

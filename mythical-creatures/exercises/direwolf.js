@@ -6,16 +6,16 @@ this.size = size || 'Massive';
 this.starksToProtect = [];
 this.huntsWhiteWalkers = true;
   }
-protect(stark) {
-  if(this.home === stark.location && this.starksToProtect.length < 2) {
-  stark.safe = true
-  this.huntsWhiteWalkers = false
-  this.starksToProtect.push(stark)
+  protect(stark) {
+    if(this.home === stark.location && this.starksToProtect.length < 2) {
+      stark.safe = true
+      this.huntsWhiteWalkers = false
+      this.starksToProtect.push(stark)
+    }
 }
-}
-leave(stark) {
-stark.safe = false
-this.starksToProtect.pop(stark)
-}
+  leave(stark) {
+    stark.safe = false
+    this.starksToProtect.pop(stark)
+  }
 }
 module.exports = Direwolf;
