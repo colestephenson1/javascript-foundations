@@ -42,7 +42,7 @@ layDown() {
     this.layingDown = false
 }
   drinkPotion() {
-    if (this.standing === true){
+    if (this.standing === true) {
       this.cranky = false
     } else {
         return 'Not while I\'m laying down!'
