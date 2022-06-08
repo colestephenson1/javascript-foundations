@@ -4,14 +4,13 @@ class Snowman {
     this.coal = snowman.coal;
     this.buttons = snowman.buttons;
     this.snowballs = snowman.snowballs;
-    this.magicHat = false
-}
-canWearMagicHat() {
-  if (this.coal >= 2 && this.buttons >= 5 && this.carrots >= 1 && this.snowballs >= 2) {
-  this.magicHat = true
-} else {
-  this.magicHat = false
-}
-}
-}
-module.exports = Snowman;cd
+    this.magicHat = false;
+  };
+  canWearMagicHat() {
+    if (this.coal >= 2 && this.buttons >= 5 && this.carrots >= 1 && this.snowballs >= 2) {
+      this.magicHat = true;
+    };
+  };
+};
+
+module.exports = Snowman;
